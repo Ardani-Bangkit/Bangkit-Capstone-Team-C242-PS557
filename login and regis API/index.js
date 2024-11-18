@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import db from "./config/database.js";
 import router from "./routes/index.js";
+import users from "./model/user-model.js";
 import cors from "cors";
 dotenv.config();
 const app = express();
@@ -10,7 +11,7 @@ const app = express();
 try{
     await db.authenticate();
     console.log('Database connected..');
-    
+    //await users.sync();
 }catch (error){
     console.log(error);
 }
