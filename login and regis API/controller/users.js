@@ -85,3 +85,36 @@ export const logout = async(req , res) => {
     res.clearCookie('refreshToken');
     return res.sendStatus(200);
 }
+
+export const updateUser = async (req, res) => {
+    const { id } = req.params;  // Get ID
+    const { fullname, email, Gender, DateOfBirth, Adress, city, postcode, Skintype, medicalhistory, alergies, medication } = req.body;
+  
+    try {
+      // Find User by ID
+      const user = await users.findByPk(id);
+      if (!user) {
+        return res.status(404).json({ msg: 'User not found' });
+      }
+  
+      // Update Data 
+      await user.update({
+        fullname: fullname || user.fullname,
+        email: email || user.email,
+        Gender: Gender || user.Gender,
+        DateOfBirth: DateOfBirth || user.DateOfBirth,
+        Adress: Adress || user.Adress,
+        city: city || user.city,
+        postcode: postcode || user.postcode,
+        Skintype: Skintype || user.Skintype,
+        medicalhistory: medicalhistory || user.medicalhistory,
+        alergies: alergies || user.alergies,
+        medication: medication || user.medication
+      });
+  
+      res.json({ msg: 'User updated successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ msg: 'Error updating user data' });
+    }
+  };
