@@ -1,1 +1,1 @@
-# lensakulitku-app
+# lensakulitku-app-backend
