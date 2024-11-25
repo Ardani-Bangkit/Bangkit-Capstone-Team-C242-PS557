@@ -8,6 +8,7 @@ import cors from "cors";
 dotenv.config();
 const app = express();
 
+
 try{
     await db.authenticate();
     console.log('Database connected..');
@@ -21,4 +22,10 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(router);
 
-app.listen(5000, ()=> console.log('Server running in port 5000'));
+app.get("/", (req, res) => {
+    console.log("Response success")
+    res.send("Response Success!")
+})
+
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Server running on port ${port}`));
