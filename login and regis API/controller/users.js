@@ -46,10 +46,10 @@ export const login = async ( req,res) =>{
         const fullname = user[0].fullname;
         const email = user[0].email;
         const accessToken = jwt.sign({userId, fullname, email}, process.env.ACCESS_TOKEN_SECRET,{
-            expiresIn: '20s'
+            expiresIn: '15m'
         });
         const refreshToken = jwt.sign({userId, fullname, email}, process.env.REFRESH_TOKEN_SECRET,{
-            expiresIn: '1d'
+            expiresIn: '7d'
         });
         await users.update({refresh_token : refreshToken},{
             where:{
@@ -58,7 +58,8 @@ export const login = async ( req,res) =>{
         });
         res.cookie('refreshToken',refreshToken,{
             httponly: true,
-            maxAge: 24 * 60 * 60 *1000
+            secure: true,
+            maxAge: 7*24 * 60 * 60 *1000
         });
         res.json({accessToken});
     } catch (error) {
