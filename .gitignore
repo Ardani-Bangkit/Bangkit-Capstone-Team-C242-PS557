@@ -1,3 +1,4 @@
 node_modules
 .envLensa-ML-backend/model_frozen.tflite
 Lensa-ML-backend/model_jenis_penyakit_frozen.tflite
+Lensa-ML-backend/lensakulitku-server-939c73e80a13.json
