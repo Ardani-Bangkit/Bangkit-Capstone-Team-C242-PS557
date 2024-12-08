@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+tensorflow
+numpy
+pillow
+mysql-connector-python
+pyjwt
+python-multipart
