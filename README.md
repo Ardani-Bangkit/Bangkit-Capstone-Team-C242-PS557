@@ -1,4 +1,29 @@
-# Lensakulitku Application 
-LensaKulitku is an innovative application designed to tackle the pressing issue of delayed skin disease detection and limited access to dermatology services. Many individuals face challenges such as long distances to clinics, high medical costs, and a lack of awareness about skin health. These barriers often result in delayed care, leading to worsening health outcomes.
+# Lensakulitku-App/ML 
+in this project we as a Machine Learning team has contribute in Build a model with TensorFlow lite using a data pipeline to present the model. Preprocessing data using data augmentation and training the model using transfer learning & fine tuning method with VGG16 architecture.
 
-With LensaKulitku, we aim to bridge this gap by providing a convenient, accessible, and affordable solution for early skin disease detection, empowering users to take charge of their skin health from the comfort of their homes.
+## Tools
+- ML Libraries and Frameworks:
+   - TensorFlow
+  - Keras
+  - TFLite
+  - OpenCV
+  - scikit-learn
+  - pandas
+  - numpy
+  - matplotlib/seaborn
+- Visual Studio Code
+- Google Colab
+- Kaggle
+- Google Drive
+
+## Dataset
+we collect datasets from kaggle and put them into Google drive
+
+Kaggle Dataset link
+- https://www.kaggle.com/datasets/aditibane/skindiseasedataset/data
+- https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset
+- https://www.kaggle.com/datasets/shubhamgoel27/dermnet
+
+Google Drive Dataset link
+- https://drive.google.com/drive/folders/1VNPP_vB8Dn47Cz1NwX1iKTChShHGixjC
+
