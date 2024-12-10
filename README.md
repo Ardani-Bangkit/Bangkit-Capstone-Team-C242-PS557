@@ -24,7 +24,5 @@ Data Source link
 - [Data Source 2](https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset)
 - [Data Source 3](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
-Dataset link
-
-[Dataset](https://drive.google.com/drive/folders/1VNPP_vB8Dn47Cz1NwX1iKTChShHGixjC)
+Dataset link : [Dataset](https://drive.google.com/drive/folders/1VNPP_vB8Dn47Cz1NwX1iKTChShHGixjC)
 
