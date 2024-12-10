@@ -7,12 +7,12 @@ Here is our team Capstone Product Based repository for Bangkit 2024 Capstone pro
 ## Our Team Member
 | **Name**       | **Bangkit ID** | **Learning Path**   | **Contact Link**                  |
 |-----------------|---------------|---------------------|------------------------------------|
-| Balgis Putri Prioni      | M284B4KX0803     | Machine Learning    | [LinkedIn](https://linkedin.com)  |
-| Lusia Carmenita Rosalia Lamba      | M309B4KX2298     | Machine Learning  | [LinkedIn](https://github.com)      |
-| Mujadid Choirus Surya   | M119B4KY3144     |  Machine Learning   | [LinkedIn](mailto:alice@example.com) |
-| Jalu Tri Atmaja    | C284B4KY2036     | Cloud Computing    | [LinkedIn](https://linkedin.com)  |
-| Muhammad Rifqi Ardani    | C284B4KY3044     | Cloud Computing     | [LinkedIn](www.linkedin.com/in/muhammad-rifqi-ardani-362a7630b)  |
-| Ibrahim Kayyis    | A284B4KY1896     |  Mobile Development   | [LinkedIn](https://linkedin.com)  |
+| Balgis Putri Prioni      | M284B4KX0803     | Machine Learning    | [LinkedIn](https://www.linkedin.com/in/balgisputri)  |
+| Lusia Carmenita Rosalia Lamba      | M309B4KX2298     | Machine Learning  | [LinkedIn](https://www.linkedin.com/in/carmenita-lamba-6a7555220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)      |
+| Mujadid Choirus Surya   | M119B4KY3144     |  Machine Learning   | [LinkedIn](https://www.linkedin.com/in/mujadidchoirussurya) |
+| Jalu Tri Atmaja    | C284B4KY2036     | Cloud Computing    | [LinkedIn](https://www.linkedin.com/in/jalutriatmaja)  |
+| Muhammad Rifqi Ardani    | C284B4KY3044     | Cloud Computing     | [LinkedIn](https://www.linkedin.com/in/muhammad-rifqi-ardani-362a7630b)  |
+| Ibrahim Kayyis    | A284B4KY1896     |  Mobile Development   | [LinkedIn](https://www.linkedin.com/in/ibrahim-kayyis-43b362311)  |
 
 
 ## About this App
