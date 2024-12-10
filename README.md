@@ -20,14 +20,14 @@ in this project we as a Cloud Computing team has contribute in Using **Cloud SQL
 - Postman
 
 ## Deployed Link
-Login and Registration REST API in App Engine
-https://backend-dot-lensakulitku-server.et.r.appspot.com/
+Login and Registration REST API in App Engine :
+[link](https://backend-dot-lensakulitku-server.et.r.appspot.com/)
 
-Machine Learning FAST API in Cloud run
-https://lensa-ml-api-1022474212288.asia-southeast2.run.app
+Machine Learning FAST API in Cloud run :
+[Link](https://lensa-ml-api-1022474212288.asia-southeast2.run.app)
 
 ## API Documentation
-https://documenter.getpostman.com/view/39389673/2sAYBbepF5
+[Lensakulitku API Documentation](https://documenter.getpostman.com/view/39389673/2sAYBbepF5)
 
 
 
