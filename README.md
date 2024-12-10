@@ -4,6 +4,10 @@ in this project we as a Cloud Computing team has contribute in Using **Cloud SQL
 ## Cloud Architecture
 ![Lensakulitku_cloud_architecture drawio](https://github.com/user-attachments/assets/614bae8c-793e-4f6f-bfeb-0e64451cb3f4)
 
+## Applications Workflow
+![Salinan Alur Aplikasi Lensakulitku V3 drawio](https://github.com/user-attachments/assets/9a689d11-ba21-42b7-b505-c72ae6f34282)
+
+
 ## Tools
 - Google Cloud Platform :
    - Cloud SQL
