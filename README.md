@@ -19,11 +19,12 @@ in this project we as a Machine Learning team has contribute in Build a model wi
 ## Dataset
 we collect datasets from kaggle and put them into Google drive
 
-Kaggle Dataset link
-- https://www.kaggle.com/datasets/aditibane/skindiseasedataset/data
-- https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset
-- https://www.kaggle.com/datasets/shubhamgoel27/dermnet
+Data Source link
+- [Data Source 1](https://www.kaggle.com/datasets/aditibane/skindiseasedataset/data)
+- [Data Source 2](https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset)
+- [Data Source 3](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
-Google Drive Dataset link
-- https://drive.google.com/drive/folders/1VNPP_vB8Dn47Cz1NwX1iKTChShHGixjC
+Dataset link
+
+[Dataset](https://drive.google.com/drive/folders/1VNPP_vB8Dn47Cz1NwX1iKTChShHGixjC)
 
