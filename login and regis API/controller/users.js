@@ -119,3 +119,33 @@ export const updateUser = async (req, res) => {
       res.status(500).json({ msg: 'Error updating user data' });
     }
   };
+
+  export const getUserData = async (req, res) => {
+    // Get the token from the authorization header
+    const token = req.headers['authorization']?.split(' ')[1];  // Bearer <token>
+
+    if (!token) {
+        return res.status(403).json({ msg: 'No token provided, authorization denied' });
+    }
+
+    try {
+        // Verify the token
+        const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+        const userId = decoded.userId; // Extract userId from the token
+
+        // Fetch the user data using the userId from the database
+        const user = await users.findByPk(userId, {
+            attributes: ['id', 'fullname', 'email', 'Gender', 'DateOfBirth', 'Adress', 'city', 'postcode', 'Skintype', 'medicalhistory', 'alergies', 'medication']
+        });
+
+        if (!user) {
+            return res.status(404).json({ msg: 'User not found' });
+        }
+
+        // Respond with the user data
+        res.json(user);
+    } catch (error) {
+        console.error(error);
+        res.status(401).json({ msg: 'Invalid or expired token' });
+    }
+};
