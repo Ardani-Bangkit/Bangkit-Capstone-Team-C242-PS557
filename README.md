@@ -24,7 +24,7 @@ LensaKulitku is an innovative application designed to tackle the pressing issue 
 With LensaKulitku, we aim to bridge this gap by providing a convenient, accessible, and affordable solution for early skin disease detection, empowering users to take charge of their skin health from the comfort of their homes.
 
 ## Documentations
-
+Mockup link : [Figma](https://www.figma.com/design/9OGbWBAWbgy4As20Z9tiVi/LensaKulitku?node-id=1-2&t=SwEVqSO8jFRDqJP3-1) 
 ## Repositories
 
 | **Branch Name**      | **Branch Link**         | **Description**                          |
