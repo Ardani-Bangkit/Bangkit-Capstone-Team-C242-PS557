@@ -15,7 +15,10 @@ Here is our team Capstone Product Based repository for Bangkit 2024 Capstone pro
 | Ibrahim Kayyis    | A284B4KY1896     |  Mobile Development   | [LinkedIn](https://www.linkedin.com/in/ibrahim-kayyis-43b362311)  |
 
 ## Application Logo
-![lensakulitku_logo (1)](https://github.com/user-attachments/assets/a4e75d14-5db7-48b7-8374-4a9c863275d2)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a4e75d14-5db7-48b7-8374-4a9c863275d2" alt="Logo lensakulitku" >
+</div>
+
 
 
 ## About this App
