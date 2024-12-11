@@ -14,6 +14,9 @@ Here is our team Capstone Product Based repository for Bangkit 2024 Capstone pro
 | Muhammad Rifqi Ardani    | C284B4KY3044     | Cloud Computing     | [LinkedIn](https://www.linkedin.com/in/muhammad-rifqi-ardani-362a7630b)  |
 | Ibrahim Kayyis    | A284B4KY1896     |  Mobile Development   | [LinkedIn](https://www.linkedin.com/in/ibrahim-kayyis-43b362311)  |
 
+## Application Logo
+![lensakulitku_logo (1)](https://github.com/user-attachments/assets/a4e75d14-5db7-48b7-8374-4a9c863275d2)
+
 
 ## About this App
 LensaKulitku is an innovative application designed to tackle the pressing issue of delayed skin disease detection and limited access to dermatology services. Many individuals face challenges such as long distances to clinics, high medical costs, and a lack of awareness about skin health. These barriers often result in delayed care, leading to worsening health outcomes.
