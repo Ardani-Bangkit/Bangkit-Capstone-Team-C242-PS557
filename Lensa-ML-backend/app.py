@@ -146,7 +146,7 @@ def predict_severity(interpreter, image):
     interpreter.invoke()
     predictions = interpreter.get_tensor(output_details_severity[0]['index'])[0]
     confidence_score = float(np.max(predictions)) * 100
-    classes = ["sedang", "ringan", "Parah"]
+    classes = ["Moderate", "Mild", "Severe"]
     severity_level = int(np.argmax(predictions))
     label = classes[severity_level]
     return {
@@ -166,45 +166,46 @@ def predict_disease(interpreter, image):
         "Psoriasis", "Tinea Ringworm", "Wart"
     ]
 
-    disease_descriptions = {
-        "Acne and Rosacea": (
-            "Acne adalah kondisi kulit yang terjadi akibat penyumbatan folikel rambut oleh minyak berlebih dan sel kulit mati. "
-            "Rosacea adalah penyakit kulit kronis yang menyebabkan kemerahan pada wajah, terutama di sekitar hidung, pipi, dagu, dan dahi. "
-            "Ditandai dengan benjolan kecil pada kulit seperti komedo (hitam/putih), pustula (berisi nanah), papula (merah tanpa nanah), atau nodul (benjolan besar yang terasa sakit). "
-            "Biasanya muncul di wajah, punggung, dan dada, sering kali disebabkan oleh kelebihan produksi minyak, penyumbatan pori-pori, atau perubahan hormon."
-        ),
-        "Atopic Dermatitis": (
-            "Atopic dermatitis, atau eksim atopik, adalah kondisi kulit kronis yang menyebabkan peradangan. "
-            "Kulit terasa sangat gatal, merah, kering, dan pecah-pecah. Pada kasus yang parah, bisa menyebabkan cairan keluar dari kulit. "
-            "Biasanya terjadi di lipatan tubuh seperti siku, lutut, atau leher. Sering terjadi pada anak-anak, tetapi bisa berlanjut hingga dewasa. "
-            "Penyakit ini sering kambuh dan dipicu oleh faktor seperti alergi, stres, cuaca dingin, atau kulit yang terlalu kering."
-        ),
-        "Herpes": (
-            "Herpes adalah infeksi kulit yang disebabkan oleh virus herpes simplex (HSV). Muncul lepuhan kecil berisi cairan yang terasa sakit atau gatal. "
-            "Pada herpes oral (HSV-1), lepuhan biasanya muncul di sekitar bibir atau mulut. Pada herpes genital (HSV-2), lepuhan terjadi di area kelamin. "
-            "Herpes sering diawali dengan gejala seperti rasa panas atau kesemutan di area yang terinfeksi. "
-            "Herpes bersifat menular dan ditularkan melalui kontak langsung dengan luka, cairan tubuh, atau mukosa yang terinfeksi. "
-            "Virus ini dapat tetap tidak aktif dalam tubuh dan kambuh akibat stres, penurunan imun, atau paparan sinar matahari."
-        ),
-        "Psoriasis": (
-            "Psoriasis adalah penyakit autoimun kronis yang menyebabkan percepatan regenerasi sel kulit. "
-            "Kondisi ini menghasilkan penumpukan sel kulit di permukaan yang terlihat seperti bercak merah dengan sisik keperakan. "
-            "Psoriasis sering muncul di area seperti siku, lutut, punggung bawah, atau kulit kepala. "
-            "Meskipun tidak menular, penyakit ini dapat memengaruhi kualitas hidup penderitanya dan sering dipicu oleh stres, infeksi, atau luka pada kulit."
-        ),
-        "Tinea Ringworm": (
-            "Tinea ringworm adalah infeksi kulit yang disebabkan oleh jamur dermatofit. Ruam berbentuk cincin dengan tepi bersisik yang menonjol "
-            "dan bagian tengahnya sering tampak lebih terang. Penyakit ini dapat menyerang berbagai bagian tubuh, seperti tubuh, kulit kepala, kaki, atau kuku. "
-            "Infeksi ini bersifat menular dan biasanya menyebar melalui kontak langsung dengan kulit yang terinfeksi atau benda yang terkontaminasi, seperti handuk, pakaian, atau alat kebersihan."
-        ),
-        "Wart": (
-            "Wart, atau kutil adalah pertumbuhan kulit kecil dan kasar yang disebabkan oleh infeksi virus human papillomavirus (HPV). "
-            "Berbentuk benjolan kecil, kasar, dan keras di permukaan kulit. Biasanya muncul di tangan, kaki, atau jari. "
-            "Kutil plantar (di telapak kaki) dapat terasa nyeri saat berjalan, sementara kutil kelamin (genital wart) muncul di area genital. "
-            "Bentuknya bisa datar, menonjol, atau seperti kembang kol."
-        ),
-    }
 
+    disease_descriptions = {
+       "Acne and Rosacea": (
+        "Acne is a skin condition that occurs due to clogged hair follicles from excess oil and dead skin cells. "
+        "Rosacea is a chronic skin disease that causes redness on the face, particularly around the nose, cheeks, chin, and forehead. "
+        "It is characterized by small bumps on the skin such as blackheads/whiteheads, pustules (filled with pus), papules (red without pus), or nodules (large painful bumps). "
+        "These usually appear on the face, back, and chest, often caused by excess oil production, clogged pores, or hormonal changes."
+        ),
+       "Atopic Dermatitis": (
+        "Atopic dermatitis, or atopic eczema, is a chronic skin condition that causes inflammation. "
+        "The skin becomes very itchy, red, dry, and cracked. In severe cases, fluid may ooze from the skin. "
+        "It commonly occurs in body folds such as elbows, knees, or neck. Often occurs in children but can persist into adulthood. "
+        "This condition frequently recurs and is triggered by factors such as allergies, stress, cold weather, or excessively dry skin."
+        ),
+       "Herpes": (
+        "Herpes is a skin infection caused by the herpes simplex virus (HSV). It appears as small, fluid-filled blisters that are painful or itchy. "
+        "In oral herpes (HSV-1), blisters usually appear around the lips or mouth. In genital herpes (HSV-2), blisters occur in the genital area. "
+        "Herpes often begins with symptoms such as a burning or tingling sensation in the infected area. "
+        "It is contagious and transmitted through direct contact with sores, body fluids, or infected mucous membranes. "
+        "The virus can remain dormant in the body and reactivate due to stress, weakened immunity, or sun exposure."
+       ),
+       "Psoriasis": (
+        "Psoriasis is a chronic autoimmune disease that accelerates the regeneration of skin cells. "
+        "This condition results in a buildup of skin cells on the surface, appearing as red patches with silvery scales. "
+        "Psoriasis commonly occurs in areas such as the elbows, knees, lower back, or scalp. "
+        "While not contagious, it can significantly affect the quality of life and is often triggered by stress, infections, or skin injuries."
+       ),
+       "Tinea Ringworm": (
+        "Tinea ringworm is a fungal infection of the skin caused by dermatophytes. It manifests as a ring-shaped rash with raised, scaly edges "
+        "and a lighter appearance in the center. This disease can affect various body parts, such as the body, scalp, feet, or nails. "
+        "The infection is contagious and typically spreads through direct contact with infected skin or contaminated objects such as towels, clothing, or hygiene tools."
+       ),
+       "Wart": (
+        "A wart is a small, rough skin growth caused by infection with the human papillomavirus (HPV). "
+        "It appears as a small, rough, and hard bump on the skin's surface. Warts usually occur on the hands, feet, or fingers. "
+        "Plantar warts (on the soles of the feet) can be painful when walking, while genital warts appear in the genital area. "
+        "They may be flat, raised, or resemble a cauliflower in shape."
+       ),
+    }
+ 
     disease_label = disease_classes[int(np.argmax(predictions))]
     return {
         "confidenceScore": confidence_score,
@@ -214,36 +215,36 @@ def predict_disease(interpreter, image):
     }
 
 suggestions_by_severity = {
-    "Acne and Rosacea": [
-        "Sedang :Krim atau serum berbasis retinoid atau azelaic acid untuk membantu mengurangi peradangan dan mencegah munculnya lesi baru. Hindari paparan sinar matahari langsung, dan gunakan tabir surya dengan SPF minimal 30.",
-        "Ringan :Gunakan pembersih wajah berbahan lembut tanpa alkohol untuk mencegah iritasi. Hindari makanan berminyak atau pedas yang dapat memicu timbulnya jerawat dan rosacea. Gunakan pelembap ringan jika kulit terasa kering.",
-        "Parah  :Konsultasikan ke dokter kulit untuk pengobatan oral seperti isotretinoin yang efektif untuk kondisi parah. Dokter juga dapat merekomendasikan perawatan laser atau terapi lain untuk mengurangi kemerahan dan peradangan."
-    ],
-    "Atopic Dermatitis": [
-        "Sedang :Oleskan krim anti-inflamasi seperti kortikosteroid sesuai anjuran dokter untuk mengurangi gatal dan iritasi. Hindari bahan iritan seperti parfum atau kain yang kasar.",
-        "Ringan :Gunakan pelembap hypoallergenic secara rutin, terutama setelah mandi, untuk menjaga kelembapan kulit dan mencegah kekeringan. Hindari sabun keras dan gunakan pembersih yang lembut.",
-        "Parah  :Jika kondisi memburuk, segera konsultasikan ke dokter untuk mendapatkan pengobatan sistemik seperti imunomodulator atau terapi biologis yang dapat membantu mengendalikan gejala parah."
-    ],
-    "Herpes": [
-        "Sedang :Minum obat antivirus seperti acyclovir atau valacyclovir sesuai resep dokter untuk membantu mempercepat penyembuhan dan mengurangi rasa sakit. Hindari pemicu seperti stres atau kelelahan.",
-        "Ringan :Jaga kebersihan area yang terinfeksi dan hindari menyentuh luka untuk mencegah penyebaran. Gunakan kain bersih untuk mengeringkan area tersebut dan hindari berbagi barang pribadi.",
-        "Parah  :Segera konsultasikan ke dokter jika luka herpes meluas, terasa sangat nyeri, atau disertai gejala lain seperti demam. Dokter mungkin akan memberikan pengobatan tambahan untuk mengendalikan infeksi."
-    ],
-    "Psoriasis": [
-        "Sedang :Gunakan salep kortikosteroid atau terapi sinar UV yang direkomendasikan dokter untuk membantu mengurangi plak dan peradangan. Ikuti jadwal perawatan secara rutin.",
-        "Ringan :Gunakan pelembap tebal untuk mengurangi kekeringan dan ketebalan plak. Hindari pemicu seperti stres, merokok, atau konsumsi alkohol yang dapat memperburuk gejala.",
-        "Parah  :Jika kondisi sangat parah, konsultasikan ke dokter untuk mempertimbangkan terapi biologis atau pengobatan sistemik lainnya. Dokter mungkin juga merekomendasikan perawatan intensif di klinik."
-    ],
-    "Tinea Ringworm": [
-        "Sedang :Jika infeksi tidak membaik atau meluas, konsultasikan ke dokter untuk mendapatkan obat antijamur oral. Hindari berbagi barang seperti handuk atau pakaian untuk mencegah penularan.",
-        "Ringan :Oleskan obat antijamur topikal seperti clotrimazole atau miconazole secara teratur pada area yang terinfeksi. Pastikan kulit tetap kering dan bersih untuk mencegah penyebaran infeksi.",
-        "Parah  :Untuk infeksi yang sangat parah, segera periksakan ke dokter spesialis kulit. Dokter mungkin akan memberikan pengobatan yang lebih kuat atau merekomendasikan tes tambahan untuk memastikan diagnosis."
-    ],
-    "Wart": [
-        "Sedang  :Pertimbangkan krioterapi (pembekuan kutil) di klinik jika kutil tidak merespons pengobatan topikal. Perawatan ini biasanya efektif untuk menghilangkan kutil yang membandel.",
-        "Ringan  :Gunakan obat bebas seperti salep asam salisilat secara teratur untuk melunakkan dan menghilangkan kutil kecil. Hindari memotong atau menggaruk kutil untuk mencegah infeksi.",
-        "Parah   :Jika kutil besar, nyeri, atau terus menyebar, konsultasikan ke dokter untuk prosedur pembedahan, elektrokoagulasi, atau perawatan laser. Dokter juga dapat memberikan rekomendasi perawatan lanjutan."
-    ]
+     "Acne and Rosacea": [
+        "Moderate: Use creams or serums with retinoids or azelaic acid to help reduce inflammation and prevent new lesions. Avoid direct sun exposure, and use sunscreen with at least SPF 30.",
+        "Mild: Use a gentle, alcohol-free facial cleanser to prevent irritation. Avoid oily or spicy foods that may trigger acne and rosacea. Apply a lightweight moisturizer if your skin feels dry.",
+        "Severe: Consult a dermatologist for oral medications like isotretinoin, effective for severe cases. Doctors may also recommend laser treatments or other therapies to reduce redness and inflammation."
+     ],
+     "Atopic Dermatitis": [
+        "Moderate: Apply anti-inflammatory creams like corticosteroids as directed by a doctor to reduce itching and irritation. Avoid irritants like perfumes or rough fabrics.",
+        "Mild: Use hypoallergenic moisturizers regularly, especially after bathing, to maintain skin hydration and prevent dryness. Avoid harsh soaps and use gentle cleansers.",
+        "Severe: If the condition worsens, consult a doctor for systemic treatments like immunomodulators or biologic therapies to manage severe symptoms."
+     ],
+     "Herpes": [
+        "Moderate: Take antiviral medications such as acyclovir or valacyclovir as prescribed by a doctor to speed up healing and reduce pain. Avoid triggers such as stress or fatigue.",
+        "Mild: Keep the infected area clean and avoid touching the sores to prevent spreading. Use a clean cloth to dry the area and avoid sharing personal items.",
+        "Severe: Seek immediate medical attention if herpes sores spread, become very painful, or are accompanied by symptoms like fever. Doctors may provide additional treatments to manage the infection."
+     ],
+     "Psoriasis": [
+        "Moderate: Use corticosteroid ointments or UV therapy as recommended by a doctor to help reduce plaques and inflammation. Follow the treatment schedule regularly.",
+        "Mild: Apply thick moisturizers to reduce dryness and plaque buildup. Avoid triggers like stress, smoking, or alcohol consumption that can worsen symptoms.",
+        "Severe: For very severe cases, consult a doctor to consider biologic therapy or other systemic treatments. Doctors may also recommend intensive clinic-based care."
+     ],
+     "Tinea Ringworm": [
+        "Moderate: If the infection does not improve or spreads, consult a doctor for oral antifungal medications. Avoid sharing items like towels or clothing to prevent transmission.",
+        "Mild: Apply topical antifungal medications such as clotrimazole or miconazole regularly to the infected area. Keep the skin dry and clean to prevent the spread of infection.",
+        "Severe: For very severe infections, see a dermatologist immediately. The doctor may prescribe stronger treatments or recommend additional tests to confirm the diagnosis."
+     ],
+     "Wart": [
+        "Moderate: Consider cryotherapy (freezing the wart) at a clinic if the wart does not respond to topical treatments. This treatment is often effective for stubborn warts.",
+        "Mild: Use over-the-counter treatments like salicylic acid ointments regularly to soften and remove small warts. Avoid cutting or scratching warts to prevent infection.",
+        "Severe: If the wart is large, painful, or keeps spreading, consult a doctor for surgical removal, electrocautery, or laser treatment. The doctor may also recommend follow-up care."
+     ]
 }
 
 def get_suggestions(disease: str, severity_level: int):
