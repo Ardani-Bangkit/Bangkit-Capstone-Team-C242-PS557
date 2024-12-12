@@ -1,4 +1,10 @@
-# Lensakulitku Application 
-LensaKulitku is an innovative application designed to tackle the pressing issue of delayed skin disease detection and limited access to dermatology services. Many individuals face challenges such as long distances to clinics, high medical costs, and a lack of awareness about skin health. These barriers often result in delayed care, leading to worsening health outcomes.
+# Lensakulitku App/MD
+in this project i Developed an intuitive and user-friendly application using Material Design 3, implementing core features such as skin disease detection, tracking, and history management. Integrated CameraX for photo capture, UCrop for image cropping, and Retrofit for secure API interactions. Managed local data persistence with Room Database and session handling using DataStore. Optimized app performance, ensured seamless integration with the ML model, and enhanced user engagement with animations and transitions.
 
-With LensaKulitku, we aim to bridge this gap by providing a convenient, accessible, and affordable solution for early skin disease detection, empowering users to take charge of their skin health from the comfort of their homes.
+## Application Flow
+![Alur Aplikasi Lensakulitku fix V4 drawio](https://github.com/user-attachments/assets/2e6dd915-ffd7-4378-b3b7-63d1e6fdde5a)
+
+## Tools
+- Whimsical
+- Figma
+- Andoroid studio
