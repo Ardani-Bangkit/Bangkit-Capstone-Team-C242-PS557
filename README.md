@@ -5,13 +5,10 @@ in this project we as a Cloud Computing team has contribute in Using **Cloud SQL
 ![Lensakulitku_cloud_architecture drawio](https://github.com/user-attachments/assets/614bae8c-793e-4f6f-bfeb-0e64451cb3f4)
 
 ## Database 
-<div>
-   <img src="https://github.com/user-attachments/assets/d17fb27b-b7fe-4cb7-9c6b-18bce1c7d89f" > <img>
-</div>
-![Database Lensa Kulitku drawio (2)](https://github.com/user-attachments/assets/d17fb27b-b7fe-4cb7-9c6b-18bce1c7d89f)
+![image](https://github.com/user-attachments/assets/93b6528d-97cf-43de-a5be-cb1a841dc517)
 
 ## API Endpoint Design
-![API architecture drawio](https://github.com/user-attachments/assets/7a5c058e-29e3-4bae-93f8-0f794dfabeb5)
+![image](https://github.com/user-attachments/assets/701dfe6d-0eba-4303-8524-65b99dca4c90)
 
 ## Tools
 - Google Cloud Platform :
