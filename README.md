@@ -19,7 +19,7 @@ Here is our team Capstone Product Based repository for Bangkit 2024 Capstone pro
   <img src="https://github.com/user-attachments/assets/a4e75d14-5db7-48b7-8374-4a9c863275d2" alt="Logo lensakulitku" >
 </div>
 
-
+### Visit Our site [Lensakulitku.com](https://lensakulitku.netlify.app/)
 
 ## About this App
 LensaKulitku is an innovative application designed to tackle the pressing issue of delayed skin disease detection and limited access to dermatology services. Many individuals face challenges such as long distances to clinics, high medical costs, and a lack of awareness about skin health. These barriers often result in delayed care, leading to worsening health outcomes.
@@ -42,4 +42,5 @@ Mockup link : [Figma](https://www.figma.com/design/9OGbWBAWbgy4As20Z9tiVi/LensaK
 
 ## Deployment Link APK Lensakulitku
 
-Visit Our site [Lensakulitku.com](https://lensakulitku.netlify.app/)
+Download here [Lensakulitku V1](https://drive.google.com/drive/folders/1iszgJ9vCupuO0Bd0wLtEcMtssJ_z0e9q?usp=sharing)
+
