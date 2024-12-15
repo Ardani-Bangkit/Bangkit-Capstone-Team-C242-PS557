@@ -32,13 +32,14 @@ With LensaKulitku, we aim to bridge this gap by providing a convenient, accessib
 </div>
 
 Mockup link : [Figma](https://www.figma.com/design/9OGbWBAWbgy4As20Z9tiVi/LensaKulitku?node-id=1-2&t=SwEVqSO8jFRDqJP3-1) 
-## Repositories
+## Repositories  
 
 | **Branch Name**      | **Branch Link**         | **Description**                          |
 |-------------------------|-------------------------|------------------------------------------|
-| Machine Learning        | [ML-Branch](Machine-learning)       | Machine learning models and datasets.  |
-| Mobile Development      | [MD-Branch](Mobile-development)      | Mobile application frontend code.       |
-| Cloud Computing         | [CC-Branch](cloud-computing)      | Backend APIs and cloud architecture.  |
+| Machine Learning        | [ML-Branch](https://github.com/Ardani-Bangkit/Bangkit-Capstone-Team-C242-PS557/tree/Machine-learning)       | Machine learning models and datasets.  |
+| Mobile Development      | [MD-Branch](https://github.com/Ardani-Bangkit/Bangkit-Capstone-Team-C242-PS557/tree/Mobile-development)      | Mobile application frontend code.       |
+| Cloud Computing         | [CC-Branch](https://github.com/Ardani-Bangkit/Bangkit-Capstone-Team-C242-PS557/tree/cloud-computing)      | Backend APIs and cloud architecture.  |
+
 
 ## Deployment Link APK Lensakulitku
 
