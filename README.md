@@ -36,9 +36,9 @@ Mockup link : [Figma](https://www.figma.com/design/9OGbWBAWbgy4As20Z9tiVi/LensaK
 
 | **Branch Name**      | **Branch Link**         | **Description**                          |
 |-------------------------|-------------------------|------------------------------------------|
-| Machine Learning        | [ML-Branch](`Machine-learning`)       | Machine learning models and datasets.  |
-| Mobile Development      | [MD-Branch](`Mobile-development`)      | Mobile application frontend code.       |
-| Cloud Computing         | [CC-Branch](`cloud-computing`)      | Backend APIs and cloud architecture.  |
+| Machine Learning        | [ML-Branch](Machine-learning)       | Machine learning models and datasets.  |
+| Mobile Development      | [MD-Branch](Mobile-development)      | Mobile application frontend code.       |
+| Cloud Computing         | [CC-Branch](cloud-computing)      | Backend APIs and cloud architecture.  |
 
 ## Deployment Link APK Lensakulitku
 
