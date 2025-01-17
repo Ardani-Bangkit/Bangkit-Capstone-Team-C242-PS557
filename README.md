@@ -44,7 +44,7 @@ Mobile Device With Android OS
 
 ### Video Demo
 #### Click on the picture to watch the demonstration:
-<a href="https://youtu.be/zRdGAV5q_cU">
+<a href="https://www.youtube.com/watch?v=_OjaLfn7MGU">
   <img src="https://drive.google.com/uc?export=view&id=1OIf2a_F_uvxRw2ChTrmEoijacw5XC8Q5" alt="Demo Video" width="300">
 </a>
 
